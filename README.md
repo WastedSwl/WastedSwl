@@ -1,88 +1,162 @@
-<h1 align="center">Yo,<span style="color:#58a6ff">wastedswl</span></h1>
+# 👋 Hi, I'm wastedswl — Fullstack Dev & AI Engineer
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=Fullstack+JavaScript%2FTypeScript+Developer;React+%7C+Next.js+%7C+Node.js;AI+Engineer+%7C+Prompt+Engineer+%7C+LLMs;Game+Dev+Lover+%F0%9F%8E%AE+%7C+Three.js+%2F+Shaders;Clean+Code+%7C+Creative+Tech+%7C+Open+Source" />
+  <img src="https://github-readme-stats.vercel.app/api?username=wastedswl&show_icons=true&theme=radical&count_private=true" alt="wastedswl's GitHub Stats" />
 </p>
 
 ---
 
-## 🧠 About Me
+## 🔥 About Me
 
-- 💻 Fullstack Dev — **JavaScript / TypeScript / Node.js / React / Next.js**
-- 🧠 AI Engineer — **Prompt Engineering, LLMs (GPT, Claude, Mistral)**
-- 🎮 GameDev Enthusiast — **Three.js, WebGL, Pixi.js, creative coding**
-- 🧩 Minimalist, maximal in execution
-- ⚙️ Currently exploring **AI+Frontend fusion**, Web3, real-time graphics
-- 📬 Email me: [wastedpotencial327@gmail.com](mailto:wastedpotencial327@gmail.com)
-
----
-
-## 🚀 Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,vite,redux,html,css,tailwind,figma,git,github,vscode,threejs" />
-</p>
-
----
-
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=wastedswl&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=wastedswl&theme=tokyonight&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wastedswl&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=wastedswl&theme=tokyonight&no-frame=true&row=1&column=7" />
-</p>
-
----
-
-## 🧩 Profile Summary
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=wastedswl&theme=tokyonight" />
-</p>
+- 🚀 Fullstack developer (JS/TS, Node.js, React)
+- 🎮 GameDev enthusiast — люблю создавать интерактивные игры и визуализации
+- 🤖 AI Engineer — внедряю нейросети и автоматизацию в проекты
+- 🌱 Сейчас изучаю продвинутый React, WebGL и машинное обучение
+- 📫 How to reach me: [email@example.com](mailto:email@example.com) | [LinkedIn](https://linkedin.com/in/wastedswl)
 
 ---
 
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .snake {
-        stroke-dasharray: 440;
-        stroke-dashoffset: 440;
-        animation: dash 4s linear forwards infinite;
-        stroke: #58a6ff;
-        stroke-width: 8;
-        fill: none;
-      }
-      @keyframes dash {
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
-    </style>
-    <path class="snake" d="M10 110 L10 10 L110 10 L110 110 L10 110 Z"/>
-  </svg>
+  <img src="https://github.com/wastedswl/wastedswl/blob/output/github-contribution-grid-snake.svg" alt="snake animation" />
 </p>
 
 ---
 
-## ⚙️ Currently Playing With
+## 🎮 Мини-игра: Классическая змейка в SVG (Прямо здесь!)
 
-```ts
-const wastedswl = {
-  stack: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js"],
-  ai: ["LLMs", "Prompt Engineering", "LangChain", "Vector DBs"],
-  gamedev: ["Three.js", "Shaders", "Creative Coding"],
-  tools: ["Vite", "Tailwind", "Git", "VSCode", "Figma"],
-  mindset: "Build fast. Learn faster. Share freely.",
-};
+<p align="center">
+  <svg id="snake-game" width="320" height="320" viewBox="0 0 320 320" style="border: 2px solid #58a6ff; background: #0d1117; cursor: pointer;">
+    <style>
+      .snake-body { fill: #58a6ff; }
+      .food { fill: #ff4757; }
+    </style>
+    <rect width="320" height="320" fill="#0d1117"/>
+  </svg>
+</p>
+
+<script>
+  (() => {
+    const svg = document.getElementById('snake-game');
+    if (!svg) return;
+    const size = 20;
+    const width = 16;
+    const height = 16;
+    let snake = [{x:8, y:8}];
+    let dir = {x:1, y:0};
+    let food = {x:Math.floor(Math.random()*width), y:Math.floor(Math.random()*height)};
+    let running = true;
+
+    function draw() {
+      while(svg.firstChild) svg.removeChild(svg.firstChild);
+      // background
+      let bg = document.createElementNS("http://www.w3.org/2000/svg","rect");
+      bg.setAttribute("width", "320");
+      bg.setAttribute("height", "320");
+      bg.setAttribute("fill", "#0d1117");
+      svg.appendChild(bg);
+
+      // food
+      let f = document.createElementNS("http://www.w3.org/2000/svg","rect");
+      f.setAttribute("x", food.x * size);
+      f.setAttribute("y", food.y * size);
+      f.setAttribute("width", size);
+      f.setAttribute("height", size);
+      f.setAttribute("class", "food");
+      svg.appendChild(f);
+
+      // snake
+      snake.forEach(part => {
+        let s = document.createElementNS("http://www.w3.org/2000/svg","rect");
+        s.setAttribute("x", part.x * size);
+        s.setAttribute("y", part.y * size);
+        s.setAttribute("width", size);
+        s.setAttribute("height", size);
+        s.setAttribute("class", "snake-body");
+        svg.appendChild(s);
+      });
+    }
+
+    function update() {
+      if (!running) return;
+      const head = {...snake[0]};
+      head.x += dir.x;
+      head.y += dir.y;
+
+      if(head.x < 0 || head.x >= width || head.y < 0 || head.y >= height) {
+        running = false; alert('Game Over! Hit the wall. Refresh to restart.');
+        return;
+      }
+      if(snake.some((s,i) => i!==0 && s.x===head.x && s.y===head.y)) {
+        running = false; alert('Game Over! Snake bit itself. Refresh to restart.');
+        return;
+      }
+
+      snake.unshift(head);
+
+      if(head.x === food.x && head.y === food.y) {
+        food = {x:Math.floor(Math.random()*width), y:Math.floor(Math.random()*height)};
+      } else {
+        snake.pop();
+      }
+    }
+
+    function changeDir(e) {
+      if(!running) return;
+      switch(e.key) {
+        case "ArrowUp": if(dir.y!==1){dir={x:0,y:-1}} break;
+        case "ArrowDown": if(dir.y!==-1){dir={x:0,y:1}} break;
+        case "ArrowLeft": if(dir.x!==1){dir={x:-1,y:0}} break;
+        case "ArrowRight": if(dir.x!==-1){dir={x:1,y:0}} break;
+      }
+    }
+
+    document.addEventListener('keydown', changeDir);
+
+    function loop() {
+      update();
+      draw();
+      if(running) setTimeout(loop, 150);
+    }
+
+    loop();
+  })();
+</script>
+
+---
+
+## 🤖 AI Projects & Experiments
+
+- [AI Chatbot](https://github.com/wastedswl/ai-chatbot) — Node.js + React chatbot with GPT integration
+- [Game AI](https://github.com/wastedswl/game-ai) — AI-powered NPC behavior for games
+- [ML Visualizer](https://github.com/wastedswl/ml-visualizer) — Interactive machine learning demos in React
+
+---
+
+## 📈 GitHub Activity & Stats
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=wastedswl&theme=react-dark&area=true" alt="Activity Graph" />
+</p>
+
+---
+
+## 🛠 Tech Stack
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" />
+<img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge" />
+<img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" />
+<img src="https://img.shields.io/badge/WebGL-FFFFFF?logo=opengl&logoColor=black&style=for-the-badge" />
+<img src="https://img.shields.io/badge/GitHub-A0A0A0?logo=github&logoColor=white&style=for-the-badge" />
+
+---
+
+## 📫 Get in Touch
+
+<p align="center">
+  <a href="mailto:email@example.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=for-the-badge" /></a>
+  <a href="https://linkedin.com/in/wastedswl"><img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge" /></a>
+  <a href="https://twitter.com/wastedswl"><img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white&style=for-the-badge" /></a>
+</p>
