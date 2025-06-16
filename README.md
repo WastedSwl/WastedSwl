@@ -27,7 +27,7 @@
 
 ## ⚙️ Currently Playing With
 
-```typescript
+
 const wastedswl = {
   stack: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js"],
   ai: ["LLMs", "Prompt Engineering", "LangChain", "Vector DBs"],
@@ -35,3 +35,36 @@ const wastedswl = {
   tools: ["Vite", "TailwindCSS", "Git", "VSCode", "Figma"],
   mindset: "Build fast. Learn faster. Share freely.",
 };
+
+📈 My GitHub Stats
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=wastedswl&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" alt="wastedswl's GitHub stats" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=wastedswl&theme=tokyonight&hide_border=true" alt="wastedswl's GitHub streak" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wastedswl&layout=compact&theme=tokyonight&hide_border=true" alt="wastedswl's top languages" />
+</p>
+🏆 GitHub Trophies
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=wastedswl&theme=tokyonight&no-frame=true&row=1&column=7" alt="wastedswl's GitHub trophies" />
+</p>
+🧩 Profile Summary
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=wastedswl&theme=tokyonight" alt="wastedswl's profile summary" />
+</p>
+🐍 My Contribution Snake
+<p align="center">
+<!-- Замените wastedswl/wastedswl на ваш_username/ваш_репозиторий_профиля, если он отличается -->
+<!-- Убедитесь, что ветка 'main' верна -->
+<img src="https://raw.githubusercontent.com/wastedswl/wastedswl/main/dist/github-contribution-grid-snake-dark.svg" alt="wastedswl's contribution snake animation" />
+</p>
+<p align="center">
+<em>The contribution snake is generated nightly by a <a href=".github/workflows/snake.yml">GitHub Action</a>.</em>
+</p>
+📫 Let's Connect
+<p align="center">
+<a href="https://github.com/wastedswl"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="mailto:wastedswl@proton.me"><img src="https://img.shields.io/badge/Email-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a> <!-- Изменен цвет ProtonMail для лучшего соответствия tokyonight -->
+<a href="https://linkedin.com/in/wastedswl"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://twitter.com/wastedswl"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
+</p>
+<h3 align="center">⚡ Let’s push boundaries with AI + Code ⚡</h3>
+
