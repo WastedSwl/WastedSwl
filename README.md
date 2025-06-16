@@ -1,4 +1,4 @@
-<h1 align="center">Yo 👋, I'm <span style="color:#58a6ff">wastedswl</span></h1>
+<h1 align="center">Yo,<span style="color:#58a6ff">wastedswl</span></h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=Fullstack+JavaScript%2FTypeScript+Developer;React+%7C+Next.js+%7C+Node.js;AI+Engineer+%7C+Prompt+Engineer+%7C+LLMs;Game+Dev+Lover+%F0%9F%8E%AE+%7C+Three.js+%2F+Shaders;Clean+Code+%7C+Creative+Tech+%7C+Open+Source" />
@@ -10,10 +10,10 @@
 
 - 💻 Fullstack Dev — **JavaScript / TypeScript / Node.js / React / Next.js**
 - 🧠 AI Engineer — **Prompt Engineering, LLMs (GPT, Claude, Mistral)**
-- 🎮 GameDev Enthusiast — **Three.js, WebGL, shaders, creative coding**
+- 🎮 GameDev Enthusiast — **Three.js, WebGL, Pixi.js, creative coding**
 - 🧩 Minimalist, maximal in execution
 - ⚙️ Currently exploring **AI+Frontend fusion**, Web3, real-time graphics
-- 📬 Email me: [wastedswl@proton.me](mailto:wastedswl@proton.me)
+- 📬 Email me: [wastedpotencial327@gmail.com](mailto:wastedpotencial327@gmail.com)
 
 ---
 
