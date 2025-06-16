@@ -1,25 +1,43 @@
-name: Generate Snake
+name: Generate GitHub Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *" # каждый день
-  workflow_dispatch:
+    # Запускать каждые 12 часов
+    - cron: "0 */12 * * *"
+  workflow_dispatch: # Позволяет запускать вручную из вкладки Actions
+  push:
+    branches:
+      - main # Или master, в зависимости от вашей основной ветки
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Необходимо для коммита изменений
+
     steps:
-      - name: Generate snake.svg
-        uses: Platane/snk@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snake animation
+        uses: Platane/snk@v3.3.0
         with:
-          github_user_name: wastedswl
+          github_user_name: ${{ github.repository_owner }} # Автоматически подставит ваш ник
+          # Список выходов. Вы можете настроить несколько вариантов.
+          # Формат: <output_path>?palette=<palette_name>&color_snake=<color_name_or_hex>&color_dots=<color_name_or_hex_comma_separated>
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#58a6ff&color_dots=#bfd7ff,#82b1ff,#6495ed,#4682b4,#00509d
+            dist/ocean.svg?color_snake=orange&color_dots=#bfd7ff,#82b1ff,#6495ed,#4682b4,#00509d
+        # Action Platane/snk@v3 сам коммитит и пушит изменения,
+        # если указан GITHUB_TOKEN (он по умолчанию доступен и имеет нужные права при `permissions: contents: write`)
+
+      # Если Platane/snk@v3 не коммитит автоматически или вы хотите больше контроля:
+      # - name: Commit and push changes
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     author_name: github-actions[bot]
+      #     author_email: github-actions[bot]@users.noreply.github.com
+      #     message: "chore: generate contribution snake"
+      #     add: 'dist/*.svg' # Добавляем все сгенерированные SVG
+      #     push: true
