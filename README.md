@@ -54,7 +54,24 @@
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://github.com/wastedswl/wastedswl/blob/output/github-contribution-grid-snake.svg" alt="snake gif" />
+  <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .snake {
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        animation: dash 4s linear forwards infinite;
+        stroke: #58a6ff;
+        stroke-width: 8;
+        fill: none;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+    <path class="snake" d="M10 110 L10 10 L110 10 L110 110 L10 110 Z"/>
+  </svg>
 </p>
 
 ---
