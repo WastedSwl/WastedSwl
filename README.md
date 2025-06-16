@@ -52,13 +52,17 @@ const wastedswl = {
 </p>
 🐍 My Contribution Snake
 <p align="center">
-<!-- Замените wastedswl/wastedswl на ваш_username/ваш_репозиторий_профиля, если он отличается -->
-<!-- Убедитесь, что ветка 'main' верна -->
+<!-- ВНИМАНИЕ НА ЭТОТ ПУТЬ! -->
+<!-- Он должен соответствовать вашему username, имени репозитория, основной ветке и пути к файлу из snake.yml -->
+<!-- Пример для username 'wastedswl', репозитория 'wastedswl', ветки 'main' и файла 'dist/github-contribution-grid-snake-dark.svg' -->
 <img src="https://raw.githubusercontent.com/wastedswl/wastedswl/main/dist/github-contribution-grid-snake-dark.svg" alt="wastedswl's contribution snake animation" />
+<!-- Если Action сохраняет файл, например, в 'output/snake.svg', то путь будет: -->
+<!-- <img src="https://raw.githubusercontent.com/wastedswl/wastedswl/main/output/snake.svg" alt="wastedswl's contribution snake animation" /> -->
 </p>
 <p align="center">
 <em>The contribution snake is generated nightly by a <a href=".github/workflows/snake.yml">GitHub Action</a>.</em>
 </p>
+
 📫 Let's Connect
 <p align="center">
 <a href="https://github.com/wastedswl"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
