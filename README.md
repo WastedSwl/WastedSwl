@@ -13,7 +13,6 @@
 - 🎮 GameDev Enthusiast: **Three.js, WebGL, Shaders, Creative Coding**
 - 🧩 Minimalist in approach, maximal in execution.
 - 🔭 Currently exploring: **AI+Frontend Fusion, Web3, Real-time Graphics & Interactions.**
-- 📫 How to reach me: [wastedswl@proton.me](mailto:wastedswl@proton.me)
 
 ---
 
